@@ -14,7 +14,7 @@ const HeroSection = () => {
         data.map((e: DetailProp) => (
           <div
             key={e?.id}
-            className={` odd:bg-[#FEF8F6] even:bg-[#FFFFFF]  lg:odd:flex-row flex-col   lg:even:flex-row-reverse flex justify-center lg:gap-x-[60px]  md:gap-12 gap-[20px] lg:p-[120px_116px] md:p-[60px_50px] p-[40px_25px] `}
+            className={` odd:bg-[#FEF8F6] even:bg-[#FFFFFF]  lg:odd:flex-row flex-col   lg:even:flex-row-reverse flex justify-center lg:gap-x-[60px]  md:gap-12 gap-[20px] lg:p-[120px_116px] md:p-[60px_50px] p-[40px_25px] items-center`}
           >
             <div className="flex-1 ">
               <Detail
@@ -27,7 +27,7 @@ const HeroSection = () => {
               />
             </div>
 
-            <div className="flex-1 overflow-hidden ">
+            <div className="flex-1 overflow-hidden  max-h-[610px]  ">
               <Image
                 src={e.heroImage ?? DefaultImage.src}
                 alt="hello"

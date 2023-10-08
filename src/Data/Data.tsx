@@ -1,5 +1,6 @@
 import { DetailProp } from "@/components/Detail/Detail";
 import image1 from "@/components/Assets/bg.jpg";
+import image3 from "@/components/Assets/image3.jpg";
 import logo1 from "@/components/Assets/Vector.png";
 import logo2 from "@/components/Assets/Group 84.png";
 
@@ -14,7 +15,7 @@ const fakeDetailData: DetailProp = [
       "Multi-Asset, Multi-currency support",
       "API-First Design",
       "No-code approach to process design",
-      "Item 5",
+      "Easy reporting",
     ],
     buttonLabel: "View More",
     onClick: () => {
@@ -24,6 +25,7 @@ const fakeDetailData: DetailProp = [
     heroImage: image1,
     backgroundColor: "#4C0662",
   },
+  
   {
     id: 2,
     Logo: logo2,
@@ -34,7 +36,7 @@ const fakeDetailData: DetailProp = [
       "Multi-Asset, Multi-currency support",
       "API-First Design",
       "No-code approach to process design",
-      "Item 5",
+      "Easy reporting",
     ],
     buttonLabel: "View More",
     onClick: () => {
@@ -53,12 +55,13 @@ const fakeDetailData: DetailProp = [
       "Multi-Asset, Multi-currency support",
       "API-First Design",
       "No-code approach to process design",
-      "Item 5",
+      "Easy reporting",
     ],
     buttonLabel: "View More",
     onClick: () => {
       console.log("Button clicked");
     },
+    heroImage: image3,
 
     backgroundColor: "#FC9947",
   },
