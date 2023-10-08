@@ -4,7 +4,7 @@ import ListComponent, { listDataProp } from "../List/ListComponent";
 
 export interface DetailProp extends listDataProp {
   id?: Key | null | undefined;
-  Logo?: string ;
+  Logo?: string;
   Logoalt?: string;
   title?: string;
   buttonLabel?: string;
@@ -41,10 +41,12 @@ const Detail = ({
       </h3>
 
       {/* list */}
-      <ListComponent
-        listData={listData}
-        className="font-medium	md:gap-4 gap-2 lg:text-[16px] text-[12px]"
-      />
+      {listData && (
+        <ListComponent
+          listData={listData}
+          className="font-medium	md:gap-4 gap-2 lg:text-[16px] text-[12px]"
+        />
+      )}
 
       {/* viewButton */}
 
