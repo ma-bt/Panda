@@ -25,6 +25,7 @@ const fakeDetailData: DetailProp = [
     heroImage: image1,
     backgroundColor: "#4C0662",
   },
+  
   {
     id: 2,
     Logo: logo2,
